@@ -10,6 +10,10 @@ nav ul a,
 /*button{
   background-color: red;
 }*/
+
+h1{
+  color: #b01e24;
+}
 nav .brand-logo {
   color: #444;
 
@@ -27,8 +31,15 @@ p {
   line-height: 2rem;
 }
 
+.wkutext{
+  color: #b01e24 !important;
+}
+
 .button-collapse {
-  color: #26a69a;
+  color: #b01e24;
+}
+.btn-large{
+  background-color: #b01e24;
 }
 
 .parallax-container {
@@ -64,10 +75,11 @@ p {
   font-size: inherit;
 }
 
-footer.page-footer {
+footer {
   margin: 0;
+  background-color: #b01e24 !important;
 }
 
 button{
-  background-color: red;
+  background-color: ;
 }
