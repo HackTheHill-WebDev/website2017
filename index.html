@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+#nav {
+	position: fixed;
+	z-index: 10;
+	height: auto;
+	width: 100%;
+	font-style: normal;
+	text-align: center;
+	color: black;
+	font-family: "";
+	background-color:;
+	font-size: 42pt;
+	}
+#page1 {
+	height: 1000px;
+	background-image: url();
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+	background-position: center center;
+	background-clip: content-box;
+	background-attachment: scroll;
+	font-weight: 400;
+	text-align: left;
+	font-size: 100px;
+	font-family: "Code Light", "Code Bold";
+	font-style: normal;
+}
+#page1 p {
+	height: 20px;
+	margin-left: 70px;
+}
+#page2 {
+	height: 1000px;
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+	background-position: center center;
+	background-clip: content-box;
+	background-attachment: scroll;
+	background-image: url(file:///C|/Users/Hunter/Documents/14511091578_e85b8b7536_k.jpg);
+}
+#page3 {
+	height: 1000px;
+}
+#page4 {
+	height: 1000px;
+}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #B94A4C;
+}
+a:hover {
+	text-decoration: none;
+	color: #636363;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/arimo:n4:default.js" type="text/javascript"></script>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body>
+<nav>
+<img class="logo-img" src="https://wkunews.files.wordpress.com/2016/10/hacktothehill2-1.png" ALT="align box" ALIGN=CENTER>
+	<div id="nav"><a href="#home">Home</a> |
+         <a href="#about">About</a> |
+         <a href="#sponsors">Sponsors</a> |
+         <a href="#faqs">FAQs</a>
+</div>
+</nav>
+
+<div id="page1">
+  <a id="home" class="smooth"></a>
+Home page content goes here.
+</div>
+ 
+<div id="page2">
+  <a id="about" class="smooth"></a>
+About page content goes here. 
+</div>
+ 
+<div id="page3">
+  <a id="sponsors" class="smooth"></a>
+Portfolio page content goes here.
+</div>
+
+<div id="page4">
+  <a id="faqs" class="smooth"></a>
+Contact page content goes here.
+</div>
+<!-- SMOOTH SCROLL -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<!-- End of SMOOTH SCROLL -->
+</body>
+</html>
