@@ -1,0 +1,98 @@
+<DOCTYPE! html>
+<html>
+<head>
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+     <div class="container" style="width: 100%; height: 100%; background-color: black;">
+        <div class="row">
+            <div class="col l6 offset-l3">
+                <!-- <img src="HTHassets/logo.jpg" id="logo" alt="Main Logo"> -->
+            </div>
+        </div>
+        </div>
+    
+
+    <div  class = "container" style="background-color: red; width: 100%; height: 100%;">
+        <div class="row">
+            <div class="col m12 l12" style="background-color: red;">
+                <img src="HTHassets/logo.jpg" id="logo" alt="Main Logo">
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+
+<script>
+
+    // $(document).ready(function(){
+    //     $('#logo').animate({
+    //         top: 0
+    //     }); 
+    // });
+
+    $(document).ready(function myMove() {
+    var elem = document.getElementById("logo");   
+    var pos = 200;
+    var id = setInterval(frame, 10);
+    var inter = setInterval(bounce, 10);
+    function frame() {
+        if (pos == 40) {
+            console.log(pos);
+            pos = pos;
+        clearInterval(id);
+        } else {
+        pos--; 
+        elem.style.top = pos + '%'; 
+        //elem.style.left = pos + '%'; 
+        }
+    }
+    
+    pos = 30;
+    var bounceval = 10;
+    function bounce(){
+        console.log(pos);
+        console.log("bounce: "+ bounceval);
+        if (pos > 39){
+            //exit if the position becomes less than one
+            pos += 10;
+            elem.style.top = pos + "%";
+            clearInterval(inter); 
+        }
+        else{
+        
+        bounceval = bounceval/2;
+        $(logo).animate({position: bounceval+"%"}, 2000);
+        pos += bounceval; 
+        elem.style.top = pos + "%";
+        }
+
+
+
+    }
+
+    });
+
+
+</script> 
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
