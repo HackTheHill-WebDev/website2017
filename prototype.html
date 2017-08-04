@@ -1,0 +1,205 @@
+<DOCTYPE! html>
+<html>
+<head>
+
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+ 
+</head>
+<body>
+<nav class="white">
+<div class="nav-wrapper">
+  <a href="#" class="brand-logo red white-text">Logo</a>
+  <ul id="nav-mobile" class="right hide-on-med-and-down">
+    <li class="red"><a class="white-text" href="#"> link 1</a></li>
+    <li class="red"><a class="white-text" href="#"> link 2</a></li>
+  </ul>
+</div>
+</nav>
+
+
+    <div class="container" style=" background-color: black; width: 100%; height: 100%;">
+        <!-- <div class="row">
+            <div class="col m12 l12">
+
+                <img src="HTHassets/logo.jpg" id="logo" alt="Main Logo">
+            </div>
+            
+        </div> -->
+        <img src="HTHassets/logo.jpg" id="logo" alt="Main Logo">
+    </div>
+
+     <div  class = "section white" >
+        <div class="row container">
+
+        </div>
+    </div>
+
+    <div  class = "container" style="background-color: #b01e24;">
+        <div class="row">
+            <div class="col m12 l12" style="background-color: #b01e24;">
+                
+
+              <ul id="list">
+              <li>
+                  <div class="container">
+                  <div class="section">
+                    <div class="row left-align">
+                      <div class="col s6 m6 l6 m6 offset-m0 offset-l0">
+                        <ul class="collapsible" data-collapsible="accordion">
+                          <li>
+                            <div class="collapsible-header"> <i class="material-icons"></i>Who is invited?</div>
+                            <div class="collapsible-body"><span> Anyone over the age of 18 is gladly invited. </span></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="container">
+                  <div class="section">
+                    <div class="row">
+                      <div class="col s3 m6 l6 offset-s0 offset-l6 right">
+                        <ul class="collapsible" data-collapsible="accordion">
+                          <li>
+                            <div class="collapsible-header"><i class="material-icons"></i>When is it?</div>
+                            <div class="collapsible-body"><span> November 5th - 6th </span></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="container">
+                  <div class="section">
+                    <div class="row">
+                      <div class="col s63 m6 l6 offset-s0 offset-l0">
+                        <ul class="collapsible" data-collapsible="accordion">
+                          <li>
+                            <div class="collapsible-header"><i class="material-icons"></i>What do I need?</div>
+                            <div class="collapsible-body"><span> Just your clothes, a sleeping bag, and definitely your computer (if you have one). </span></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="container">
+                  <div class="section">
+                    <div class="row">
+                      <div class="col s3 m6 l6 offset-s9 offset-m6 offset-l6">
+                        <ul class="collapsible" data-collapsible="accordion">
+                          <li>
+                            <div class="collapsible-header"><i class="material-icons"></i>What do I need??</div>
+                            <div class="collapsible-body"><span> Just your clothes, a sleeping bag, and definitely your computer (if you have one). </span></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+          </ul>
+            </div>
+        </div>
+    </div>
+    
+<footer>
+    
+
+
+
+</footer>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="Materialize/js/materialize.js"></script>
+
+
+<script>
+
+    // $(document).ready(function(){
+    //     $('#logo').animate({
+    //         top: 0
+    //     }); 
+    // });
+    
+      var options = [
+        {selector: 'list', offset: 0, callback: function(el){
+          Materialize.fadeInImage($(el));
+        }}
+      ]
+
+      Materialize.scrollFire(options);
+   
+
+    $(document).ready(function myMove() {
+    var elem = document.getElementById("logo");   
+    var pos = 100;
+    var id = setInterval(frame, 10);
+    var inter = setInterval(bounce, 10);
+    function frame() {
+        if (pos == 40) {
+            console.log(pos);
+            pos = pos;
+        clearInterval(id);
+        } else {
+        pos--;
+
+        // $("#logo").animate({top: pos + '%'}, 800)
+        elem.style.top = pos + '%'; 
+        //elem.style.left = pos + '%'; 
+        }
+    }
+    
+    pos = 15;
+    var bounceval = 10;
+    function bounce(){
+        console.log(pos);
+        console.log("bounce: "+ bounceval);
+        if (pos > 34){
+            //exit if the position becomes less than one
+            pos += 10;
+            $("#logo").animate({top: 25+"%"}, 800);
+            // elem.style.top = 50 + "%";
+            clearInterval(inter); 
+        }
+        else{
+        
+        bounceval = bounceval/2;
+        $("#logo").animate({top: 25+"%"}, 800);
+        bounceval += 30;
+        $("#logo").animate({top: bounceval+"%"}, 1000);
+        pos += bounceval; 
+        // elem.style.top = pos + "%";
+        }
+
+
+
+    }
+
+    });
+
+
+</script> 
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+ #logo{
+    position: absolute;
+    width: 50%;
+    height: 75%;
+
+    /*top: 200%;*/
+    left: 25%;
+
+} 
+.collapsible-header{
+	/*border-color: #b01e24;
+	border-style: solid;*/
+}
+
+.collapsible-body{
+	background-color: white;
+}
