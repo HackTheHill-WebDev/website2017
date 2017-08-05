@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy3xZlomdooP6LFUSmc-0jroIyk_HEGo8&callback=myMap"></script>
+    </head>
+    <body>
+        <div class="container" style="width: 100%; height: 100%; background-color: black;">
+            <div class="row">
+                <div class="col l6 offset-l3">
+                    <!-- <img src="HTHassets/logo.jpg" id="logo" alt="Main Logo"> -->
+                </div>
+            </div>
+        </div>
+        <div  class = "container" style="background-color: red; width: 100%; height: 100%;">
+            <div class="row">
+                <div class="col m12 l12" style="background-color: red;">
+                    <img src="HTHassets/logo.jpg" id="logo" alt="Main Logo">
+                </div>
+            </div>
+        </div>
+        <!-- Location and Time -MB -->
+        <div class="container">
+            <div class="row">
+                <h1>Location and Time</h1>
+            </div>
+            <div class="row">
+                <p>Snell Hall, Western Kentucky University, Bowling Green, Kentucky</p>
+                <p>Saturday November 4th - Sunday November 5th</p>
+            </div>
+            <div id="map" class="center-align"></div>
+        </div>
+
+        <script>
+            //function to generate map from google
+            function myMap() {
+                var canvas = document.getElementById("map");
+                var options = {
+                    center: new google.maps.LatLng(36.9861061,-86.4486986),
+                    zoom: 17
+                };
+                var map = new google.maps.Map(canvas, options);
+            }
+        </script>
+
+        <script>
+
+            // $(document).ready(function(){
+            //     $('#logo').animate({
+            //         top: 0
+            //     }); 
+            // });
+
+            /*$(document).ready(function myMove() {
+            var elem = document.getElementById("logo");   
+            var pos = 200;
+            var id = setInterval(frame, 10);
+            var inter = setInterval(bounce, 10);
+            function frame() {
+                if (pos == 40) {
+                    console.log(pos);
+                    pos = pos;
+                clearInterval(id);
+                } else {
+                pos--; 
+                elem.style.top = pos + '%'; 
+                //elem.style.left = pos + '%'; 
+                }
+            }
+            
+            pos = 30;
+            var bounceval = 10;
+            function bounce(){
+                console.log(pos);
+                console.log("bounce: "+ bounceval);
+                if (pos > 39){
+                    //exit if the position becomes less than one
+                    pos += 10;
+                    elem.style.top = pos + "%";
+                    clearInterval(inter); 
+                }
+                else{
+                
+                bounceval = bounceval/2;
+                $(logo).animate({position: bounceval+"%"}, 2000);
+                pos += bounceval; 
+                elem.style.top = pos + "%";
+                }
+
+
+
+            }
+
+            });*/
+
+
+        </script> 
+    </body>
+</html>
