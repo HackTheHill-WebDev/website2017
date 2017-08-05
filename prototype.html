@@ -23,7 +23,7 @@
             </div>
         </div>
         <!-- Location and Time -MB -->
-        <div class="container">
+        <div class="container center-align">
             <div class="row">
                 <h1>Location and Time</h1>
             </div>
@@ -39,8 +39,14 @@
             function myMap() {
                 var canvas = document.getElementById("map");
                 var options = {
+                    backgroundColor: "gray",
+                    clickableIcons: false,
+                    disableDefaultUI: true,
                     center: new google.maps.LatLng(36.9861061,-86.4486986),
-                    zoom: 17
+                    zoom: 17,
+                    maxZoom: 19,
+                    minZoom: 15,
+                    streetViewControl: false
                 };
                 var map = new google.maps.Map(canvas, options);
             }
