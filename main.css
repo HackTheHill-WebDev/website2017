@@ -7,6 +7,12 @@
     left: 25%;
 
 } 
+
+nav {
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
 .collapsible-header{
 	/*border-color: #b01e24;
 	border-style: solid;*/
