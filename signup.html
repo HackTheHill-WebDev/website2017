@@ -12,28 +12,29 @@
 </head>
 <body>
 
-<h1 class="center"> Sign Up here </h1>
-<a href="template.html" class="waves-effect waves-light btn">Back to Main Page</a>
+<h1 class="center"> Sign Up Here </h1>
+<a href="template.html" class="waves-effect waves-light btn">  <i class="small material-icons">arrow_back </i> Back to Main Page</a>
 	<div class="row">
     <form class="col s12">
       <div class="row">
         <div class="input-field col s6 l6">
+          <i class="material-icons prefix">account_circle</i>
           <input placeholder="first name" id="first_name" type="text" class="validate">
           <label for="first_name">First Name</label>
         </div>
         <div class="input-field col s6 l6">
+          <i class="material-icons prefix">account_circle</i>
           <input id="last_name" type="text" class="validate">
           <label for="last_name">Last Name</label>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s12 l12">
-          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-          <label for="disabled">Disabled</label>
+        <div class="input-field col s6 l6">
+          <i class="material-icons prefix">school</i>
+          <input value="" id="school" type="text" class="validate">
+          <label for="school">School</label>
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12 l12">
+        <div class="input-field col s6 l6">
           <input id="password" type="password" class="validate">
           <label for="password">Password</label>
         </div>
@@ -44,14 +45,79 @@
           <label for="email">Email</label>
         </div>
       </div>
-      <div class="row">
-        <div class="col s12 l12">
-          This is an inline input field:
-          <div class="input-field inline">
-            <input id="email" type="email" class="validate">
-            <label for="email" data-error="wrong" data-success="right">Email</label>
-          </div>
-        </div>
+
+
+
+
+  <form action="#">
+    <div class="file-field input-field">
+      <div class="btn">
+        <span>Upload Resume</span>
+        <input type="file">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+  </form>
+
+      </div>
+    </form>
+  </div>
+
+<div style="width: 500px;">
+ <div style="float: left; width: 250px;">
+ 
+        T-Shirt Size
+
+        <form action="#">
+    <p>
+      <input name="group1" type="radio" id="test1" />
+      <label for="test1">small</label>
+    </p>
+    <p>
+      <input name="group1" type="radio" id="test2" />
+      <label for="test2">medium</label>
+    </p>
+    <p>
+      <input class="with-gap" name="group1" type="radio" id="test3"  />
+      <label for="test3">Large</label>
+    </p>
+    <p>
+      <input name="group1" type="radio" id="test4" />
+      <label for="test4">X-Large</label>
+    </p>
+  </form>
+</div>
+
+
+<div style="float: left; width: 250px;">
+Dietary Restrictions
+
+
+        <form action="#">
+    <p>
+      <input name="group2" type="radio" id="test5" />
+      <label for="test5">None</label>
+    </p>
+    <p>
+      <input name="group2" type="radio" id="test6" />
+      <label for="test6">Vegetarian</label>
+    </p>
+    <p>
+      <input class="with-gap" name="group2" type="radio" id="test7"  />
+      <label for="test7">Vegan</label>
+    </p>
+    <p>
+      <input name="group2" type="radio" id="test8"  />
+      <label for="test8">Gluten Free</label>
+    </p>
+  </form>
+  <br style="clear: left;" />
+  </div>
+
+         
+
       </div>
     </form>
   </div>
