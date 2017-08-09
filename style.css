@@ -10,9 +10,10 @@
   cursor: url(HTHassets/cursor1.png), url(cursor2.png), auto;
 }*/
 
-h1{
+ h1{
   color: #b01e24;
 }
+
 nav .brand-logo {
   color: #444;
 
@@ -20,6 +21,11 @@ nav .brand-logo {
 img {
     display: block;
     margin: 5px auto;
+}
+
+.btn{
+  
+  background-color: #b01e24;
 }
 
 nav{
