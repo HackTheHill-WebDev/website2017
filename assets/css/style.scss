@@ -1,33 +1,35 @@
 $size: 500px;
-
 div {
   background: #b01e24;
   display: inline-block;
   margin: 0 1em 1em 0;
-  top: 100%; 
- 
-}
-
-#half-circle{
-    
-    height: $size;
-    width: $size * 2.5;
-    
+  top: 100%;
 }
 
 #half-circle {
+  height: $size;
+  width: $size * 2.5;
   border-top-left-radius: $size * 2;
   border-top-right-radius: $size * 2;
   animation: mymove 5s;
   animation-iteration-count: 1;
-  position :relative;
+  position: relative;
 }
+
 
 /* Standard syntax */
-@keyframes mymove {
-    0%   {top: 300px;}
-    25%  {top: 200px;}
-    75%  {top: 100px;}
-    100% {top: 0px;}
-}
 
+@keyframes mymove {
+  0% {
+    top: 300px;
+  }
+  25% {
+    top: 200px;
+  }
+  75% {
+    top: 100px;
+  }
+  100% {
+    top: 0px;
+  }
+}
