@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $('.parallax').parallax();
+	$('.parallax').parallax();
 });
 
 $(document).ready($(".bigred").css('cursor', 'url(HTHassets/cursor1.png), auto'));
