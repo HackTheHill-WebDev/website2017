@@ -1,0 +1,29 @@
+div {
+  background: #b01e24;
+  display: inline-block;
+  margin: 0 1em 1em 0;
+  top: 100%; }
+
+#half-circle {
+  height: 500px;
+  width: 1250px; }
+
+#half-circle {
+  border-top-left-radius: 1000px;
+  border-top-right-radius: 1000px;
+  animation: mymove 5s;
+  animation-iteration-count: 1;
+  position: relative; }
+
+/* Standard syntax */
+@keyframes mymove {
+  0% {
+    top: 300px; }
+  25% {
+    top: 200px; }
+  75% {
+    top: 100px; }
+  100% {
+    top: 0px; } }
+
+/*# sourceMappingURL=sheet.css.map */
