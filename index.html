@@ -20,18 +20,28 @@
       </ul>
     </div>
   </nav>
-  <div class="container" style=" background-color: black; width: 100%; height: 100%;">
-    <!-- <div class="row">
-<div class="col m12 l12">
-<img src="HTHassets/logo.jpg" id="logo" alt="Main Logo">
-</div>
-</div> -->
-    <img src="assets/img/logo.jpg" id="logo" alt="Main Logo">
-  </div>
+
   <div class="section white">
     <div class="row container">
     </div>
   </div>
+    <div class="container" style="z-index:-2; background-color: black;">
+       <div class="container">
+        <div class="row">
+          <div class="col m12 l12"  style="width: 100%; height: 100%;">
+          </div>
+        </div>
+        
+      </div> 
+      <div class="container">
+        <div class="row">
+          <div class="col m12 l12">
+            <img src="assets/img/logo.jpg" id="logo" alt="Main Logo" style="z-index: 0;">
+          </div>
+        </div>
+      </div>  
+ 
+
   <div class="container" style="background-color: #b01e24;">
     <div class="row">
       <div class="col m12 l12" style="background-color: #b01e24;">
@@ -101,6 +111,8 @@
             </div>
           </li>
         </ul>
+  </div>
+
         <!-- Location and Time -MB -->
         <div class="container center-align">
           <div class="row">
@@ -142,9 +154,10 @@
           }
         }]
         Materialize.scrollFire(options);
-        $(document).ready(function myMove() {
+
+         $(document).ready(function myMove() {
           var elem = document.getElementById("logo");
-          var pos = 100;
+          var pos = 200;
           var id = setInterval(frame, 10);
           var inter = setInterval(bounce, 10);
           function frame() {
@@ -168,7 +181,7 @@
               //exit if the position becomes less than one
               pos += 10;
               $("#logo").animate({
-                top: 25 + "%"
+                top: 0 + "%"
               }, 800);
               // elem.style.top = 50 + "%";
               clearInterval(inter);
@@ -186,11 +199,11 @@
             }
           }
         });
-        /*$(document).ready(function(){
-        $('#logo').animate({
-        top: 0
-        }); 
-        });
+         /*$(document).ready(function(){
+        // $('#logo').animate({
+        // top: 0
+        // }); 
+        // });
         $(document).ready(function myMove() {
         var elem = document.getElementById("logo");   
         var pos = 200;
@@ -244,7 +257,7 @@
       </script>
 </body>
 
-=======
+<!-- =======
 <!DOCTYPE html>
 <html>
 
@@ -272,7 +285,7 @@
 <img src="HTHassets/logo.jpg" id="logo" alt="Main Logo">
 </div>
 </div> -->
-    <img src="assets/img/logo.jpg" id="logo" alt="Main Logo">
+     <!-- <img src="assets/img/logo.jpg" id="logo" alt="Main Logo">
   </div>
   <div class="section white">
     <div class="row container">
@@ -348,7 +361,7 @@
           </li>
         </ul>
         <!-- Location and Time -MB -->
-        <div class="container center-align">
+       <!-- <div class="container center-align">
           <div class="row">
             <div class="col s12 m12 l12"> 
               <h1>Location and Time</h1>
@@ -493,4 +506,4 @@
 </body>
 
 
-</html>
+</html> -->
