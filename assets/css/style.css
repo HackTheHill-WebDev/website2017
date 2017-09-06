@@ -22,11 +22,30 @@ img {
     display: block;
     margin: 5px auto;
 }
-
+.text-wku{
+  color: #b01e24;
+}
 /* .btn{
   
   background-color: #b01e24;
 } */
+.btn{
+  background-color: #b01e24 !important;
+}
+
+#stagger li{
+  opacity: 0;
+}
+
+#stagger2 li{
+  opacity: 0;
+}
+
+#intro {
+  /* border-radius: 50px 50px 0px 0px; */
+  border-top-left-radius:50%;
+  border-top-right-radius:50%;
+}
 
 nav{
   background-image: url(hero.png);

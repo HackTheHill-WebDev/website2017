@@ -84,9 +84,11 @@
 }
 
 .red {
-  background-color: #F44336 !important;
+  background-color: #b01e24 !important;
 }
-
+.wkured {
+   background-color: #b01e24 !important;
+}
 .red-text {
   color: #F44336 !important;
 }

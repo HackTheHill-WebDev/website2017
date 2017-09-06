@@ -8,6 +8,10 @@
 
 } 
 
+.wkured {
+   background-color: #b01e24 !important;
+}
+
 nav {
     position: fixed;
     top: 0px;

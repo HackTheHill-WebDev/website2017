@@ -4,11 +4,13 @@
 
 <head>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="assets/css/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link rel="stylesheet" href="assets\css\font-awesome-4.7.0\css\font-awesome.min.css" type="text/css">
   <title>Hack the Hill</title>
+
+  <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
 </head>
 
 <body>
@@ -35,7 +37,7 @@
       <div class="row">
         
         <div class="col m12 l12">
-          <img src="assets/img/logo2.png" id="logo" alt="Main Logo" style="z-index: 0;opacity: 0;">
+          <img src="assets/img/HTH-SVG.svg" id="logo" alt="Main Logo" style="z-index: 0;opacity: 0;">
         </div>
       </div>
       </div>
@@ -44,29 +46,24 @@
     </div>  
  
 
-  <div class="container" style="margin-top: 40%;">
-
-    <div class="row" style="background-color: #b01e24;">
+  <div class="container" style="margin-top: 40%;" >
+    <div class="row red" id="intro">
       <div class="col m12 l12">
-       
-          
           <h3 class="center-align white-text">Hello Fellow Hackers!</h3>
-          <p class="white-text">
+          <p class="white-text center-align">
           Welcome to round 2 of Hack the Hill. We'll be hosting our second annual hackathon here at Western Kentucky University. You'll be able to network with your peers
           and show off some of cool projects you develop here. Instead of your regular 24-hours, you'll get an additional hour when the clocks fall backwards. 
           When this happens we'll be hosting a special one hour event that you can compete in for a prize
           </p>
       </div >
     </div>
-  </div>
-  <div class="container white" style="margin-top: 10%; margin-bottom: 10%;">
-    <div class="row white" >
-        <ul id="list">
+    <div class="row"  >
+        <ul id="stagger">
           <li>
             <div class="col s6 m6 l6 m6 offset-m0 offset-l0">
-              <ul class="collapsible" data-collapsible="accordion">
+              <ul class="collapsible" data-collapsible="accordion" >
                 <li>
-                  <div class="collapsible-header"> <i class="material-icons">insert_invitation</i>Who is invited?</div>
+                  <div class="collapsible-header wkured white-text"> <i class="material-icons">insert_invitation</i>Who is Invited?</div>
                   <div class="collapsible-body"><span> Anyone over the age of 18 is gladly invited. </span></div>
                 </li>
               </ul>
@@ -76,17 +73,21 @@
             <div class="col s3 m6 l6 offset-s0 offset-l0">
               <ul class="collapsible" data-collapsible="accordion">
                 <li>
-                  <div class="collapsible-header"><i class="material-icons">date_range</i>When is it?</div>
+                  <div class="collapsible-header wkured white-text"><i class="material-icons">date_range</i>When is It?</div>
                   <div class="collapsible-body"><span> November 5th - 6th </span></div>
                 </li>
               </ul>
             </div>
           </li>
+        </ul>
+        </div>
+        <div class="row" id="stagger2">
+        <ul>
           <li>
             <div class="col s3 m6 l6 offset-s0 offset-l0">
               <ul class="collapsible" data-collapsible="accordion">
                 <li>
-                  <div class="collapsible-header"><i class="material-icons"></i>What do I need?</div>
+                  <div class="collapsible-header wkured white-text"><i class="fa fa-list-ol" aria-hidden="true"></i>What do I need?</div>
                   <div class="collapsible-body"><span> Just your clothes, a sleeping bag, and definitely your computer (if you have one). </span></div>
                 </li>
               </ul>
@@ -96,7 +97,7 @@
             <div class="col s3 m6 l6 offset-s0 offset-m0 offset-l0">
               <ul class="collapsible" data-collapsible="accordion">
                 <li>
-                  <div class="collapsible-header"><i class="material-icons"></i>What else do I need to know?</div>
+                  <div class="collapsible-header wkured white-text"><i class="fa fa-microchip" aria-hidden="true"></i>Misc.</div>
                   <div class="collapsible-body"><span> Just your clothes, a sleeping bag, and definitely your computer (if you have one). </span></div>
                 </li>
               </ul>
@@ -114,11 +115,11 @@
                   <!-- <span class="card-title white=text">Join us!</span> -->
 
                 </div>
-                <div class="card-content"  style="background-color: #b01e24;">
+                <div class="card-content wkured"  >
                     <h5 class="center-align white-text"> If you would like to join us for Hack the Hill 2017 sign up below!</h5>
               </div>
                 <div class="card-action center-align">
-                  <a class="waves-effect center-align waves-light btn">Signup Here</a>
+                  <a class="waves-effect center-align btn">Signup Here</a>
                 </div>
             </div>
           </div>
@@ -128,6 +129,8 @@
     <div class="container" style="margin-top: 10%; margin-bottom: 10%;">
       <div class="row">
         <div class="col s12 m12 l12">
+
+          <h1 class="center-align text-wku">Schedule</h1>
           <table class="centered">
             <thead>
               <tr>
@@ -137,22 +140,25 @@
             </thead>
             <tbody>
               <tr>
-                <td> 3:00pm Registration </td>
+                <td> 12:00pm Registration </td>
                 <td> 9:00am Breakfast </td>
               </tr>
               <tr>
-                  <td> 5:00pm Opening Ceremony </td>
+                  <td> 2:00pm Opening Ceremony </td>
                   <td> 1:00pm Lunch
               </tr>
               <tr>
-                <td> 8:00pm Dinner</td>
+                <td> 6:00pm Dinner</td>
                 <td> 3:00pm Closing Ceremony
-
               </tr>
-              
+              <tr> 
+                  <td> Insert Workshop Here </td>
+              </tr>
+              <tr>
+                <td> Midnight Event </td>
+              </tr>
             </tbody>
           </table>
-
         </div>
       </div>
     </div>
@@ -162,25 +168,25 @@
         <!-- Location and Time -MB -->
         <div class="container center-align white" style="opacity: 0;" id="gmaps">
           <div class="row" >
-            <div class="col s12 m12 l4" style="background-color: #b01e24;"> 
+            <div class="col s12 m12 l4 wkured"> 
               <i class="large material-icons white-text">add_location</i>
-              <h3>Location</h3>
-              <p>Snell Hall - Western Kentucky University - Bowling Green, KY</p>
+              <h3 class="white-text">Location</h3>
+              <p class="white-text">Snell Hall - Western Kentucky University - Bowling Green, KY</p>
             </div>
           
             <div class="col s12 m4 l4">
-              <i class="large material-icons" style="color: #b01e24;">date_range</i>
+              <i class="large material-icons wkured" >date_range</i>
               <h3>Date & Time</h3>
               <p>November 4th & 6th</p>
               <p>Arrive by 3:00 pm on Saturday to catch the full event</p>
             </div>
-            <div class="col s12 m4 l4" style="background-color: #b01e24;">
+            <div class="col s12 m4 l4 wkured">
               <i class="large material-icons white-text">format_list_bulleted</i>
-              <h3>What To Bring</h3>
+              <h3 class="white-text">What To Bring</h3>
               <ul>
-                <li><i class="material-icons">laptop</i> Laptop</li>
-                <li><i class="fa fa-bed" aria-hidden="true"></i> pillow and blanket</li>
-                <li><i class="fa fa-medkit" aria-hidden="true"></i> medicines</li> 
+                <li class="white-text"><i class="material-icons white-text">laptop</i> Laptop</li>
+                <li class="white-text"><i class="fa fa-bed white-text" aria-hidden="true"></i> pillow and blanket</li>
+                <li class="white-text"><i class="fa fa-medkit white-text" aria-hidden="true"></i> medicines</li> 
               </ul>
             </div>
             </div>
@@ -191,13 +197,46 @@
           </div>
         </div>
       </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m12 l12">
+              <h1 class="center-align text-wku"> Sponsors </h1>
+
+          </div>
+        </div>
+      </div>
+       <footer class="page-footer">
+         <div class="container">
+           <div class="row">
+             <div class="col l6 s12">
+               <h5 class="white-text">Hack the Hill</h5>
+              <div class="col l4 offset-l12 s12">
+                <h5 class="white-text">HTH Links</h5>
+                  <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Disclaimer</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://github.com/HackTheHill-WebDev/website2017"><i class="fa fa-github" aria-hidden="true"></i> Veiw our Site on Github!</a></li>
+                </ul>
+             </div>
+           </div>
+         </div>
+       </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="assets/js/materialize.js"></script>
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy3xZlomdooP6LFUSmc-0jroIyk_HEGo8&callback=myMap"></script>
       <script src="assets\js\jquery-ui-1.12.1.custom\jquery-ui-1.12.1.custom\jquery-ui.js"> </script>
     <script>
  
-        var options = [{
+        var options = [
+          {selector: '#stagger', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+          } 
+          },
+           {selector: '#stagger2', offset: 350, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+          } 
+          },
+        {
           selector: '#gmaps',
           offset: 300,
           callback: function (el) {
@@ -206,6 +245,8 @@
         }];
         Materialize.scrollFire(options);
 
+        
+
          $(document).ready(function myMove() 
          {
           var elem = document.getElementById("logo");
@@ -213,7 +254,7 @@
           var id = setInterval(frame, 10);
           //var inter = setInterval(bounce, 10);
           function frame() {
-            if (pos == 5) {
+            if (pos == 6) {
               console.log(pos);
               pos = pos; //why is this needed???
               clearInterval(id);
